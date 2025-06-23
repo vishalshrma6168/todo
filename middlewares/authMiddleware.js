@@ -16,7 +16,7 @@ try {
     if(tokenDecode.id){
       req.auth = {
       userId: tokenDecode.id,
-      // Add other details if needed
+      
     };
     
     }else{
