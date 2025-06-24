@@ -62,6 +62,9 @@ export const getTodoController = async (req, res) => {
   }
 };
 
+
+
+
 // delete todo
 export const deleteTodoController = async (req, res) => {
   try {
@@ -107,7 +110,7 @@ export const updateTodoController = async (req, res) => {
     // update
     const todo = await todoModel.findByIdAndUpdate(
       id,
-      {$set: data },
+      { $set: data },
       { returnOriginal: false }
     );
     res.status(200).send({
